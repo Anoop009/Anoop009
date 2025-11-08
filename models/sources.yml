@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: demo  # A logical name for your source
+    database: demo # The database where the raw data resides
+    schema: demo_schema   # The schema within the database
+    description: "contains demo details from the snowflake" # Optional description
+    tables:
+      - name: bike_data # Name of a table within this source
+      - name: WEATHERTABLE
+        description: "contains the staged data that is stored in bike and weather" # Optional description for the table
