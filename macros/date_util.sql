@@ -11,6 +11,8 @@ else 'Business day' end
 
 {% endmacro %}
 
+
+
 {% macro season(x) %}
 CASE when month(to_timestamp({{x}})) in (12,1,2) then 'Winter'
      when month(to_timestamp({{x}})) in (3,4,5) then 'Spring'
